@@ -42,9 +42,9 @@ function onFormSubmit(evt) {
   //   evt.target.elements.message.value === ''
   //     ? alert('Please fill message field!')
   //     : (formData.message = evt.target.elements.message.value);
-  if (evt.target.elements.email.value === '') {
+  if (!evt.target.elements.email.value) {
     alert('Please fill email field!');
-  } else if (evt.target.elements.message.value === '') {
+  } else if (!evt.target.elements.message.value) {
     alert('Please fill message field!');
   } else {
     formData.email = evt.target.elements.email.value;
